@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poll System</title>
+  <title>Survey System</title>
   <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -38,7 +38,8 @@
   <!-- Poll List Section -->
   <section id="polls-section" style="display: none;">
     <div class="container">
-      <h2>Polls</h2>
+      <h2>Survey Topics</h2>
+      <h4 style="color: grey;">Please pick any survey topic and answer its questions</h4>
       <ul id="polls-list"></ul>
     </div>
   </section>
@@ -46,7 +47,7 @@
   <!-- Questions Section -->
   <section id="questions-section" style="display: none;">
     <div class="container">
-      <h2 id="poll-title">Poll Questions</h2>
+      <h2 id="poll-title">Survey Questions</h2>
       <form id="questions-form"></form>
       <button onclick="submitAnswers()">Submit Answers</button>
     </div>
